@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#add8e6"
+    tools:context=".Infor_Device">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parent_tenVT"
+        style="@style/InforParentContrain"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/parent_maVT"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_tenVT"
+            style="@style/Infor1"
+            android:text="Ten VT"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_infor_tenVT"
+            style="@style/Infor2"
+            android:text="Abc Rtg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_tenVT"
+            app:layout_constraintTop_toTopOf="@id/tv_tenVT" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parent_maVT"
+        style="@style/InforParentContrain"
+        app:layout_constraintBottom_toTopOf="@+id/parent_noiSX"
+        app:layout_constraintEnd_toEndOf="@id/parent_tenVT"
+        app:layout_constraintStart_toStartOf="@id/parent_tenVT"
+        app:layout_constraintTop_toBottomOf="@id/parent_tenVT">
+
+        <TextView
+            android:id="@+id/tv_maVT"
+            style="@style/Infor1"
+            android:text="Ma VT"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_infor_maVT"
+            style="@style/Infor2"
+            android:text="Abc Rtg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_maVT"
+            app:layout_constraintTop_toTopOf="@id/tv_maVT" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parent_noiSX"
+        style="@style/InforParentContrain"
+        app:layout_constraintBottom_toTopOf="@+id/parent_chat_luong"
+        app:layout_constraintEnd_toEndOf="@id/parent_tenVT"
+        app:layout_constraintStart_toStartOf="@id/parent_tenVT"
+        app:layout_constraintTop_toBottomOf="@id/parent_maVT">
+
+        <TextView
+            android:id="@+id/tv_noiSx"
+            style="@style/Infor1"
+            android:text="Noi Sx"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_infor_noiSx"
+            style="@style/Infor2"
+            android:text="Abc Rtg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_noiSx"
+            app:layout_constraintTop_toTopOf="@id/tv_noiSx" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parent_chat_luong"
+        style="@style/InforParentContrain"
+        app:layout_constraintBottom_toTopOf="@id/parent_khoHMG"
+        app:layout_constraintEnd_toEndOf="@id/parent_tenVT"
+        app:layout_constraintStart_toStartOf="@id/parent_tenVT"
+        app:layout_constraintTop_toBottomOf="@id/parent_noiSX">
+
+        <TextView
+            android:id="@+id/tv_chat_luong_VT"
+            style="@style/Infor1"
+            android:text="CL"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_infor_chat_luong_VT"
+            style="@style/Infor2"
+            android:text="Abc Rtg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_chat_luong_VT"
+            app:layout_constraintTop_toTopOf="@id/tv_chat_luong_VT" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parent_khoHMG"
+        style="@style/InforParentContrain"
+        app:layout_constraintEnd_toEndOf="@id/parent_tenVT"
+        app:layout_constraintStart_toStartOf="@id/parent_tenVT"
+        app:layout_constraintBottom_toTopOf="@+id/parent_khoHML"
+        app:layout_constraintTop_toBottomOf="@id/parent_chat_luong">
+
+        <TextView
+            android:id="@+id/tv_khoHMG"
+            style="@style/Infor1"
+            android:text="Kho HMG"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_infor_khoHMG"
+            style="@style/Infor2"
+            android:text="Abc Rtg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_khoHMG"
+            app:layout_constraintTop_toTopOf="@id/tv_khoHMG" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parent_khoHML"
+        style="@style/InforParentContrain"
+        app:layout_constraintEnd_toEndOf="@id/parent_tenVT"
+        app:layout_constraintStart_toStartOf="@id/parent_tenVT"
+        app:layout_constraintBottom_toTopOf="@+id/parent_khoHMH"
+        app:layout_constraintTop_toBottomOf="@id/parent_khoHMG">
+
+        <TextView
+            android:id="@+id/tv_khoHML"
+            style="@style/Infor1"
+            android:text="Kho HML"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_infor_khoHML"
+            style="@style/Infor2"
+            android:text="Abc Rtg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_khoHML"
+            app:layout_constraintTop_toTopOf="@id/tv_khoHML" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parent_khoHMH"
+        style="@style/InforParentContrain"
+        app:layout_constraintEnd_toEndOf="@id/parent_tenVT"
+        app:layout_constraintStart_toStartOf="@id/parent_tenVT"
+        app:layout_constraintBottom_toTopOf="@+id/parent_khoHMM"
+        app:layout_constraintTop_toBottomOf="@id/parent_khoHML">
+
+        <TextView
+            android:id="@+id/tv_khoHMH"
+            style="@style/Infor1"
+            android:text="Kho HMH"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_infor_khoHMH"
+            style="@style/Infor2"
+            android:text="Abc Rtg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_khoHMH"
+            app:layout_constraintTop_toTopOf="@id/tv_khoHMH" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parent_khoHMM"
+        style="@style/InforParentContrain"
+        app:layout_constraintEnd_toEndOf="@id/parent_tenVT"
+        app:layout_constraintBottom_toTopOf="@id/parent_so_sach"
+        app:layout_constraintStart_toStartOf="@id/parent_tenVT"
+        app:layout_constraintTop_toBottomOf="@id/parent_khoHMH">
+
+        <TextView
+            android:id="@+id/tv_khoHMM"
+            style="@style/Infor1"
+            android:text="Kho HMM"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_infor_khoHMM"
+            style="@style/Infor2"
+            android:text="Abc Rtg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_khoHMM"
+            app:layout_constraintTop_toTopOf="@id/tv_khoHMM" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parent_so_sach"
+        style="@style/InforParentContrain"
+        app:layout_constraintEnd_toEndOf="@id/parent_tenVT"
+        app:layout_constraintBottom_toTopOf="@+id/parent_cho_muon"
+        app:layout_constraintStart_toStartOf="@id/parent_tenVT"
+        app:layout_constraintTop_toBottomOf="@id/parent_khoHMM">
+
+        <TextView
+            android:id="@+id/tv_so_sach"
+            style="@style/Infor1"
+            android:text="Sổ sách"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_infor_so_sach"
+            style="@style/Infor2"
+            android:text="Abc Rtg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_so_sach"
+            app:layout_constraintTop_toTopOf="@id/tv_so_sach" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parent_cho_muon"
+        style="@style/InforParentContrain"
+        app:layout_constraintEnd_toEndOf="@id/parent_tenVT"
+        app:layout_constraintBottom_toTopOf="@id/parent_ton_TT"
+        app:layout_constraintStart_toStartOf="@id/parent_tenVT"
+        app:layout_constraintTop_toBottomOf="@id/parent_so_sach">
+
+        <TextView
+            android:id="@+id/tv_cho_muon"
+            style="@style/Infor1"
+            android:text="Cho Mượn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_infor_cho_muon"
+            style="@style/Infor2"
+            android:text="Abc Rtg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_cho_muon"
+            app:layout_constraintTop_toTopOf="@id/tv_cho_muon" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parent_ton_TT"
+        style="@style/InforParentContrain"
+        app:layout_constraintEnd_toEndOf="@id/parent_tenVT"
+        app:layout_constraintStart_toStartOf="@id/parent_tenVT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/parent_cho_muon">
+
+        <TextView
+            android:id="@+id/tv_ton_TT"
+            style="@style/Infor1"
+            android:text="Ton TT"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_infor_ton_TT"
+            style="@style/Infor2"
+            android:text="Abc Rtg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_ton_TT"
+            app:layout_constraintTop_toTopOf="@id/tv_ton_TT" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

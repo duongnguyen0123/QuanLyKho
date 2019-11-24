@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "308452484680",
+    "firebase_url": "https://quanlikho-a793d.firebaseio.com",
+    "project_id": "quanlikho-a793d",
+    "storage_bucket": "quanlikho-a793d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:308452484680:android:9cf8a90268f3c2bda81a7d",
+        "android_client_info": {
+          "package_name": "com.ptithcm.quanlikho"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "308452484680-07eobs5tce6tfosvhkqlmclpmvhf5eim.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ptithcm.quanlikho",
+            "certificate_hash": "7f029988f828097628a0cf6feb3974aa943a63c4"
+          }
+        },
+        {
+          "client_id": "308452484680-5phq937gqbkrjk5tfdpm5rihc8jdmkp6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8dY-ONJoZw8C71LKmJxnmXxSGk4eVTOI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "308452484680-5phq937gqbkrjk5tfdpm5rihc8jdmkp6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

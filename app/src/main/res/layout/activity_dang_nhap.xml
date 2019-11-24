@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DangNhapActivity">
+
+    <TextView
+        android:id="@+id/tv_dn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:text="Đăng Nhập"
+        android:textColor="@android:color/primary_text_light"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/parent_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parent_login"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_dang_nhap"
+        app:layout_constraintEnd_toEndOf="@id/tv_dn"
+        app:layout_constraintStart_toStartOf="@id/tv_dn"
+        app:layout_constraintTop_toBottomOf="@id/tv_dn">
+
+        <EditText
+            android:id="@+id/ed_user"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:hint="User Name"
+            android:maxLength="20"
+            android:inputType="text"
+            android:autofillHints="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/ed_pass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:autofillHints="@null"
+            android:maxLength="15"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ed_user" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <Button
+        android:id="@+id/btn_dang_nhap"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/solid_8dc75f_coner_5dp"
+        android:text="Đăng Nhập"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@id/tv_forgetpass"
+        app:layout_constraintEnd_toEndOf="@id/tv_dn"
+        app:layout_constraintStart_toStartOf="@id/tv_dn"
+        app:layout_constraintTop_toBottomOf="@id/parent_login" />
+
+    <TextView
+        android:id="@+id/tv_forgetpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="Quên mật khẩu"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_dang_nhap" />
+    <Button
+        android:id="@+id/sign_in_button"
+        android:text="google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tv_dn"
+        app:layout_constraintBottom_toTopOf="@id/tv_forgetpass"
+        app:layout_constraintTop_toBottomOf="@id/btn_dang_nhap"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
